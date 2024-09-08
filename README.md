@@ -14,7 +14,7 @@ Several componemts are implemented double, just pick what works best for you.
 
 ## Schematic
 
-![Schematic](./images/Schematic.png)
+![Schematic](./schematics/Schematic.png)
 
 ## PCB
 

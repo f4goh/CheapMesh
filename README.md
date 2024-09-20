@@ -1,6 +1,8 @@
 # CheapMesh
 Meshtastic with HT-CT62 module
 
+![Proto](./images/proto_img.jpg)
+
 #  FROM Paul Hausk - Not tested yet
 https://gitlab.com/paulhausk/CheapMesh
 
@@ -15,6 +17,8 @@ Several componemts are implemented double, just pick what works best for you.
 ## Schematic
 
 ![Schematic](./schematics/Schematic.png)
+
+(Warning F4GOH D+ and D- are inverted)
 
 ## PCB
 
@@ -58,7 +62,7 @@ Several componemts are implemented double, just pick what works best for you.
 ### 3.3V Regulator
 * Option A: use an external 3.3V powersource
 * Option C: use a AP211K-3.3 and the correspondending capacitors
-* Option B: use a L78L33 and the correspondending capacitors
+* Option B: use a L78L33 and the correspondending capacitors (Warning F4GOH it doesn't work)
 * Option D: use a [L78L33 pin compatible DC/DC Buck converter like this one](https://aliexpress.com/item/1005005626634245.html?spm=a2g0o.productlist.main.1.1897OyxROyxRry&algo_pvid=5153460b-3c1f-4c8b-b6be-ddba46f5bff5&algo_exp_id=5153460b-3c1f-4c8b-b6be-ddba46f5bff5-0&pdp_npi=4%40dis%21EUR%211.55%210.95%21%21%211.62%210.99%21%402103853617143919371401715e9ea6%2112000033795813043%21sea%21DE%210%21AB&curPageLogUid=g6keG6AFecrJ&utparam-url=scene%3Asearch%7Cquery_from%3A)
   
 ### Resetting for flashing

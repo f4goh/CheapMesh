@@ -110,11 +110,11 @@ WIP
 
 ![Flasher](./images/flasher.png)
 
-## Compile with OLED with OLED
+## Compile with OLED feature
 
 ![Oled](./images/HT_OLED.jpg)
 
-[Howto compile ?](https://www.youtube.com/watch?v=CTNXBvOog2I)
+[How to compile ?](https://www.youtube.com/watch?v=CTNXBvOog2I)
 
 change variant.h in  meshtastic : firmware/variants/esp32c3/heltec_esp32c3/variant.h
 

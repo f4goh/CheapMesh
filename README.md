@@ -75,7 +75,7 @@ WIP
 
 ## 2.4G Antenna size
 
-![Antenna](./images/antenna size.png)
+![Antenna](./images/antennasize.png)
 
 
 ## [Flasher](https://flasher.meshtastic.org/)

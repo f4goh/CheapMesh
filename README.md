@@ -3,8 +3,8 @@ Meshtastic with HT-CT62 module
 
 ![Proto](./images/htc-pcb.jpg)
 
-#  FROM Paul Hausk - this version by F4GOH
-https://gitlab.com/paulhausk/CheapMesh
+#  FROM Paul [Hausk](https://gitlab.com/paulhausk/CheapMesh) - this version by F4GOH
+
 
 CheapMesh is a pcb arround the HT-CT62 chip by Heltec.
 
@@ -17,7 +17,7 @@ The goal is to get a cheap Meshtastic node with this chip, therefore some corner
 
 ## PCB
 
-![PCB_3D](./images/pcb.png)
+![pcb](./images/pcb.png)
 
 
 ## BOM
@@ -80,9 +80,9 @@ WIP
 
 ## [Flasher](https://flasher.meshtastic.org/)
 
-![Flasher](./images/flasher.png)
-
 ![Prog](./images/htc-pcb-prog.jpg)
+
+![Flasher](./images/flasher.png)
 
 
 ## Compile with OLED feature

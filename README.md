@@ -1,52 +1,52 @@
 # CheapMesh
 Meshtastic with HT-CT62 module
 
-![Proto](./images/proto_img.jpg)
+![Proto](./images/htc-pcb.jpg)
 
-#  FROM Paul Hausk - tested by F4GOH
+#  FROM Paul Hausk - this version by F4GOH
 https://gitlab.com/paulhausk/CheapMesh
-
-![PCB_3D](./images/PCB_3D.png)
 
 CheapMesh is a pcb arround the HT-CT62 chip by Heltec.
 
 The goal is to get a cheap Meshtastic node with this chip, therefore some corners where cut.
 
-Several componemts are implemented double, just pick what works best for you.
-
 ## Schematic
 
-![Schematic](./schematics/Schematic.png)
+![Schematic](./schematics/ht-ct62.png)
 
-(Warning F4GOH D+ and D- are inverted)
 
 ## PCB
 
-![PCB](./images/PCB.png)
-
-![PCB_3d2](./images/3d.png)
+![PCB_3D](./images/pcb.png)
 
 
 ## BOM
-|Reference|Value           |Footprint                                                  |Qty|
-|---------|----------------|-----------------------------------------------------------|---|
-|AE1,AE2  |Antenna         |                                                           |2  |
-|C1,C5    |C_Polarized     |                                                           |2  |
-|C3,C6    |C               |Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder  |2  |
-|H2,H3    |MountingHole_Pad|MountingHole:MountingHole_3.2mm_M3_DIN965_Pad              |2  |
-|J1       |Conn_01x02_Pin  |Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical |1  |
-|J2       |Conn_01x09_Pin  |Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical |1  |
-|J3       |USB_A           |Library:usb-PCB                                            |1  |
-|J4       |USB_C           |Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12          |1  |
-|J5       |Conn_Coaxial    |Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal|1  |
-|Q1       |UMH3N           |Package_TO_SOT_SMD:SOT-363_SC-70-6                         |1  |
-|R1,R2    |10kΩ            |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder   |2  |
-|R3,R4    |22Ω             |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder   |2  |
-|R5,R6    |5.1kΩ           |Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder   |2  |
-|Screen1  |Conn_01x04_Pin  |Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical |1  |
-|U1       |L78L33          |Package_TO_SOT_THT:TO-220-3_Vertical                       |1  |
-|U2       |HT-CT62         |RF_Module:Heltec_HT-CT62                                   |1  |
-|U3       |AP2112K-3.3     |Package_TO_SOT_SMD:SOT-23-5                                |1  |
+
+| Reference     | Value         | Footprint / Description                          | Qty |
+|---------------|---------------|--------------------------------------------------|-----|
+| R1            | 1k            | Resistor_1206                                    | 1   |
+| R2            | 220k          | Resistor_1206                                    | 1   |
+| R3            | 100k          | Resistor_1206                                    | 1   |
+| R4,R5         | 22            | Resistor_1206                                    | 2   |
+| R6            | 10k           | Resistor_1206                                    | 1   |
+| C1,C6         | 47uF          | Capacitor_vertical                               | 2   |
+| C2,C3,C4,C5   | 100nF         | Capacitor_1206                                   | 4   |
+| U1            | HT-CT62       | Integrated Circuit                               | 1   |
+| U2            | AMS1117-3.3   | Integrated Circuit                               | 1   |
+| D1            | LED           | Diode_1206                                       | 1   |
+| BP_MENU       | BP            | Miscellaneous                                    | 1   |
+| GND           | POINT TEST    | Miscellaneous                                    | 1   |
+| J1            | USBCONN2      | Type B female connector                          | 1   |
+| J2            | CONN-SIL3     | Male and strap connector                         | 1   |
+| J3,J11        | CONN-SIL6     | Female connector                                 | 2   |
+| J4            | —             | As you want                                      | 1   |
+| J5            | CONN-SIL5     | Female connector                                 | 1   |
+| J6            | OLED          | SSD1306 (GND VDD SCL SDA)                        | 1   |
+| J7            | CONN-SIL4     | As you want                                      | 1   |
+| J8            | SMA           | Female connector                                 | 1   |
+| J9            | ANT2.4G       | On board antenna                                 | 1   |
+| J10           | SIL-100-02    | Miscellaneous                                    | 1   |
+| PT1-PT4       | ENTRETOISE    | Spacer                                           | 4   |
 
 
 
@@ -56,49 +56,16 @@ Several componemts are implemented double, just pick what works best for you.
 * Option C: use an external antenna with an sma connector (and cutting of the onboard lora antenna)
 * Option D: solder on a dipol antenna (and cutting of the onboard lora antenna)
   
-### Screen
-* Completele optional. Make sure to get a screen with the matching pinout.
-
-### 3.3V Regulator
-* Option A: use an external 3.3V powersource
-* Option C: use a AP211K-3.3 and the correspondending capacitors (works)
-* Option B: use a L78L33 and the correspondending capacitors (Warning F4GOH it doesn't work : brown-out reset)
-* Option D: use a [L78L33 pin compatible DC/DC Buck converter like this one](https://aliexpress.com/item/1005005626634245.html?spm=a2g0o.productlist.main.1.1897OyxROyxRry&algo_pvid=5153460b-3c1f-4c8b-b6be-ddba46f5bff5&algo_exp_id=5153460b-3c1f-4c8b-b6be-ddba46f5bff5-0&pdp_npi=4%40dis%21EUR%211.55%210.95%21%21%211.62%210.99%21%402103853617143919371401715e9ea6%2112000033795813043%21sea%21DE%210%21AB&curPageLogUid=g6keG6AFecrJ&utparam-url=scene%3Asearch%7Cquery_from%3A)
-  
-### Resetting for flashing
-* Option A: populate the UMH3N
-* Option B: use an external usb serial interface which can reset the chip
-* Option C: Connect GND and HT_EN with a wire. Power on the board (by plugging in) and remove the wire.
-
 ### Powering the Board
 Never connect more than one powersource at a time!!!
-* via the usb a pcb connector
-* via the usb c connector 
-* via the Vin Pins
-* via the 3.3V Pins
+* Only via the usb type B
+* Via the 3.3V with Serial module current is too low !!! remove jumper !!!
   
-
-### Resistors
-All Resitors are 1206 SMD Resistors
-
-R1, R2: Pullup Resistors, 10kOhm
-
-R3, R4: USB Inline Resistors, 22Ohm
-
-R5, R6: USB-C Resistors, 5,1kOhm
-
-If you want to flash and reflash the HT-CT62 on the pcb, you need to populate R1 and R2.
-If you not wanna flash the HT-CT62 on the pcb (you have a already programmed chip), you can make a solder bridge on R1.
-
 
 ## Building instructions
 WIP
-1. Source the the pcb yourself. I recomend JLCPCB (I not payed nor sponsored by them) to get the pcb created. 5 pcbs should cost 2$ plus shipping and taxes.
+1. Source the the pcb yourself. I recomend JLCPCB to get the pcb created. 5 pcbs should cost 2$ plus shipping and taxes.
 2. Solder on the components.
-3. Flash the ESP.
-    * Option A -  use an external usb serial interface
-    * Option B - use the usb A pcb port
-    * Option C - use the usb c port
 
 ## Pinout
 
@@ -106,15 +73,22 @@ WIP
 
 ![Pinout2](./images/HT-CT62.png)
 
+## 2.4G Antenna size
+
+![Antenna](./images/antenna size.png)
+
+
 ## [Flasher](https://flasher.meshtastic.org/)
 
 ![Flasher](./images/flasher.png)
 
+![Prog](./images/htc-pcb-prog.jpg)
+
+
 ## Compile with OLED feature
 
-![Oled](./images/HT_OLED.jpg)
-
 [How to compile ?](https://www.youtube.com/watch?v=CTNXBvOog2I)
+or read complilation_meshtastic_rpi.pdf in firmware directory to install platform.io
 
 change variant.h in  meshtastic : firmware/variants/esp32c3/heltec_esp32c3/variant.h
 

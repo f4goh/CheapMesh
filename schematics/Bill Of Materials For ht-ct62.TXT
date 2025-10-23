@@ -1,0 +1,43 @@
+Bill Of Materials
+=================
+
+QTY  PART-REFS           VALUE               CODE                          
+---  ---------           -----               ----                          
+Resistors 1206
+---------
+1    R1                  1k                                                
+1    R2                  220k                                              
+1    R3                  100k                                              
+2    R4,R5               22                                                
+1    R6                  10k                                               
+
+Capacitors
+----------
+2    C1,C6               47uF    vertical                                          
+4    C2-C5               100nF   1206                                          
+
+Integrated Circuits
+-------------------
+1    U1                  HT-CT62                                           
+1    U2                  AMS1117-3.3                                        
+
+Diodes
+------
+1    D1                  LED  1206                                             
+
+Miscellaneous
+-------------
+1    BP_MENU             BP                                                
+1    GND                 POINT TEST                                        
+1    J1                  USBCONN2    type B female                                        
+1    J2                  CONN-SIL3  male and strap                                       
+2    J3,J11              CONN-SIL6  female                                        
+1    J4                  as you want                                                  
+1    J5                  CONN-SIL5  Female                                       
+1    J6                  OLED       SSD 1306   PINOUT BY (GND VDD SCL SDA)
+1    J7                  CONN-SIL4  as you want                                        
+1    J8                  SMA female                                               
+1    J9                  ANT2.4G   on board                                        
+1    J10                 SIL-100-02                                        
+4    PT1-PT4             ENTRETOISE                                        
+

@@ -3,7 +3,7 @@ Meshtastic with HT-CT62 module
 
 ![Proto](./images/htc-pcb.jpg)
 
-#  FROM Paul [Hausk](https://gitlab.com/paulhausk/CheapMesh) - this version by F4GOH
+#  FROM [Paul Hausk](https://gitlab.com/paulhausk/CheapMesh) - this version by F4GOH
 
 
 CheapMesh is a pcb arround the HT-CT62 chip by Heltec.

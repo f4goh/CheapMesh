@@ -78,7 +78,7 @@ WIP
 ![Antenna](./images/antennasize.png)
 
 
-## [Flasher](https://flasher.meshtastic.org/)
+## [Flasher](https://flasher.meshtastic.org/) without OLED feature
 
 Use an USB to TTL serial adapter to flash the module
 
@@ -112,7 +112,7 @@ Install esptool
 pip install esptool
 ```
 
-Update the firmware
+Update the firmware (need to [flash](https://flasher.meshtastic.org/) without OLED feature before)
 
 ```console
 esptool.py --chip esp32c3 --port /dev/ttyUSB0 --baud 115200 write_flash --flash_mode dio --flash_size=4MB  0x10000 firmware.bin

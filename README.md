@@ -17,7 +17,7 @@ The goal is to get a cheap Meshtastic node with this chip, therefore some corner
 
 ## PCB
 
-![pcb](./images/pcb.png)
+![pcb](./images/PCB.png)
 
 
 ## BOM

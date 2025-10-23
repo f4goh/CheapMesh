@@ -6,7 +6,7 @@ Meshtastic with HT-CT62 module
 #  FROM [Paul Hausk](https://gitlab.com/paulhausk/CheapMesh) - this version by F4GOH
 
 
-CheapMesh is a pcb arround the HT-CT62 chip by Heltec.
+CheapMesh is a pcb arround the [HT-CT62](https://fr.aliexpress.com/item/1005005508556514.html) chip by Heltec.
 
 The goal is to get a cheap Meshtastic node with this chip, therefore some corners where cut.
 
@@ -79,6 +79,8 @@ WIP
 
 
 ## [Flasher](https://flasher.meshtastic.org/)
+
+Use an USB to TTL serial adapter to flash the module
 
 ![Prog](./images/htc-pcb-prog.jpg)
 
